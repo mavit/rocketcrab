@@ -1,8 +1,12 @@
 import { PromiseWebSocket } from "../types/types";
 import WebSocket from "ws";
 
-export const postJson = (url = "", data = {}): Promise<any> =>
-    fetch(url, {
+export const postJson = (
+    url = "",
+    data = {},
+    customFetch?: (input: RequestInfo, init?: RequestInit) => Promise<Response>
+): Promise<any> =>
+    (customFetch || fetch)(url, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

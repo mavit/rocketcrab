@@ -4,7 +4,13 @@ import { postJson } from "../../utils/utils";
 const game: ServerGame = {
     id: "codenames",
     name: "Codenames",
-    author: "Vlaada Chvátil",
+    author: "Czech Games Edition",
+    basedOn: {
+        game: "Codenames",
+        author: "Vlaada Chvátil",
+        link: "https://czechgames.com/en/codenames/",
+        bggId: 178900,
+    },
     description:
         "Two teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.",
     displayUrlText: "codenames.game",

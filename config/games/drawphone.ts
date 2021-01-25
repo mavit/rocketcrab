@@ -5,6 +5,11 @@ const game: ServerGame = {
     id: "drawphone",
     name: "Drawphone",
     author: "Tanner Krewson",
+    basedOn: {
+        game: "a traditional parlour game",
+        link: "https://en.wikipedia.org/wiki/Chinese_whispers#Variants",
+        bggId: 30618,
+    },
     description: `In Drawphone, there are no winners... only losers! Players 
         take turns drawing pictures and guessing what those pictures are. If 
         you guess correctly, nothing happens! If you guess wrong or draw like a 

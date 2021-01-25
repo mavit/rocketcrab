@@ -5,6 +5,11 @@ const game: ServerGame = {
     id: "fishbowl",
     name: "Fishbowl",
     author: "Avi Moondra",
+    basedOn: {
+        game: "a traditional parlour game",
+        link: "https://en.wikipedia.org/wiki/Celebrity_(game)",
+        bggId: 22303,
+    },
     description:
         "Fishbowl is a virtual version of a fun (and mostly hilarious) guessing game, designed for any group of all ages! You'll need at least 4 to play, but it only gets more fun with more players. Hop on a video call, and play through rounds of Taboo, Charades, and Password.",
     displayUrlText: "fishbowl-game.com",
